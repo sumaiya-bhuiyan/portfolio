@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Sumaiya</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+   <nav>
+    <div class="nav-container">
+    <div class="logo"data-aos="zoom-in"data-aos-duration="1000">
+        <span>Sumaiya</span>
+        </div>
+        <div class="links">
+        <div class="link"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a> </div>
+        <div class="link"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a> </div>
+        <div class="link"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Projects</a> </div>
+        <div class="link"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Achievements</a> </div>
+        <div class="link"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Publications</a> </div>
+        <div class="link"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact">Contact</a> </div>
+        </div>
+         <i class="fa-solid fa-bars hamburg"onclick="hamburg()"></i>
+        </div> 
+       <div class="dropdown">
+        <div class="links">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Projects</a>
+            <a href="">Achievements</a>
+            <a href="">Publications</a>
+            <a href="">Contact </a>
+              <i class="fa-solid fa-xmark cancel"onclick="cancel()"></i>
+        </div>
+       </div>
+        </nav> 
+       <section class="Home"id="Home">
+        <div class="main-container">
+            <div class="image"data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="Group 1 (1).png"alt="">
+            </div>
+            <div class="content">
+                <h3 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">Hello,I'm</h3>
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800"><span>Sumaiya Sultana Bhuiyan</span></h1>
+                 <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">
+                 <span></span></div>
+            <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+               I'm a Computer Science student passionate about Competitive Programming and Web Development. 
+               I love solving coding problems, exploring new technologies, and creating projects that 
+               enhance my programming skills.<p>
+            
+            <div class="social-links"data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                <a href="https://github.com/sumaiya-bhuiyan"target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/share/17vgLfFYNP/"target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/sumaiya-bhuiyan-487b26375"target="_blank"><i class="fa-brands fa-square-linkedin"></i></a>
+                <a href="mailto:sumaiyabhuiyan0105@gmail.com"target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="btn"data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                <button>
+                  <i class="fa-solid fa-download"></i></a>
+            
+                Download Resume</button>
+            </div>
+          
+       </section>
+     <!-- About Section -->
+<section class="about" id="about">
+
+    <div class="content">
+
+        <div class="title">
+            <span>About Me</span>
+        </div>
+
+        <div class="about-details">
+     
+        
+
+            <p>
+               I am currently pursuing a Bachelor of Science (B.Sc.) in Computer Science and Engineering (CSE). As a passionate learner, I have a strong interest in 
+               Competitive Programming and Web Development. I enjoy solving coding problems, exploring algorithms, and continuously improving my programming skills.
+                I am currently building projects, learning modern web technologies, and working towards becoming a skilled Software Engineer.
+            </p>
+
+        </div> <div class="stats-box">
+
+    
+
+    <div class="stat-card">
+        <h5>EXPERIENCE</h5>
+        <h2>1+ Years</h2>
+        <p>Learning & Building Skills</p>
+    </div>
+
+    <div class="stat-card">
+        <h5>PROJECTS</h5>
+        <h2>2+</h2>
+        <p>Completed Projects</p>
+    </div>
+
+    <div class="stat-card">
+        <h5>PROBLEMS SOLVED</h5>
+        <h2> 160+</h2>
+        <p>Codeforces,
+            Codechef</p>
+    </div>
+
+    <div class="stat-card">
+        <h5>Competition
+Participated</h5>
+        <h2>8+</h2>
+        <p>Competitions</p>
+    </div>
+
+</div>
+        </div>
+
+    </div>
+
+</section>
+     <!-- Contact Section -->
+
+<section class="contact" id="contact">
+
+    <div class="contact-container">
+
+        <h2>Contact Me</h2>
+
+        <form action="https://formsubmit.co/sumaiyabhuiyan0105@gmail.com" method="POST">
+
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <textarea placeholder="Your Message" rows="6" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </div>
+
+</section>
+      
+
+         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>AOS.init({offset:0})</script>
+  <script>
+   function hamburg(){
+       const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+     function cancel(){
+       const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".links a");
+
+window.addEventListener("scroll", () => {
+
+    let current = "home";   // শুরুতে Home active
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        const sectionHeight = section.offsetHeight;
+
+        if (
+            window.scrollY >= sectionTop &&
+            window.scrollY < sectionTop + sectionHeight
+        ) {
+            current = section.id;
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
+    });
+
+});
+
+  </script>
+
+</body>
+</html>
