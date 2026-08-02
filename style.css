@@ -30,7 +30,7 @@ nav{
      z-index: 1000;
       top: 0;
     left: 0;
-     background: #10191E;
+     background: #040405;
 }
 
 .nav-container{
@@ -121,7 +121,7 @@ nav{
     transform: 0.2s linear;
 }
 .dropdown .links a:hover{
-    color: black;
+    color: #040405;
     background-color: #B0FCE0;}
 
 .main-container{
@@ -252,6 +252,7 @@ background: linear-gradient(to left, #08151c, #343d54);
     font-size: 100%;
     font-weight: 700;
     border-radius: 30px;
+    white-space: nowrap;
     transition: 0.2s linear;
 }
 .content button:hover{
@@ -267,7 +268,7 @@ background: linear-gradient(to left, #08151c, #343d54);
 .about{
     width: 100%;
     min-height: 100vh;
-    background: #010101;
+    background: #040405;
     padding: 80px 8%;
 }
 
@@ -309,7 +310,7 @@ background: linear-gradient(to left, #08151c, #343d54);
     width:100%;
     margin-top:35px;
     padding:20px;
-    background:#12171d;
+    background: #040405;
     border-radius:20px;
     display:flex;
     justify-content:space-between;
@@ -359,7 +360,7 @@ background: linear-gradient(to left, #08151c, #343d54);
 .skills{
      width: 100%;
     min-height: 100vh;
-    background: #010101;
+    background: #040405;
     padding: 80px 8%;
 }
 
@@ -542,7 +543,7 @@ background: linear-gradient(to left, #08151c, #343d54);
 .blogs{
     width: 100%;
     min-height: 100vh;
-    background: #0a0e14;
+    background: #040405;
     padding: 80px 8%;
 }
  
@@ -572,7 +573,7 @@ background: linear-gradient(to left, #08151c, #343d54);
 }   
 .blog-card{
     background: #040405;
-    border: 1px ;
+   border: 1px solid transparent;
     border-radius: 1.25rem;
     padding: 2rem;
     transition: 0.3s ease;
@@ -656,7 +657,20 @@ background: linear-gradient(to left, #08151c, #343d54);
     transition: ease-in;
     color:rgb(12, 11, 16);
 }
+:root {
+    --bg-color: #040405;
+}nav {
+    background: var(--bg-color);
+}
 
+.home,
+.about,
+.skills,
+.projects,
+.blogs,
+.contact {
+    background: var(--bg-color);
+}
 
 @media(max-width:884px){
     body{
